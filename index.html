@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Morse Code Translator</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    textarea { width: 100%; height: 100px; margin-bottom: 10px; }
+    .result { font-weight: bold; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Morse Code Translator</h1>
+  <label for="text-input">Enter Text:</label>
+  <textarea id="text-input" placeholder="Type something..."></textarea>
+  <button onclick="translateToMorse()">Translate to Morse</button>
+  <h2>Output (Morse Code):</h2>
+  <div class="result" id="morse-output"></div>
+  <hr>
+
+<h1>Morse to Text Translator</h1>
+<label for="morse-input">Enter Morse Code:</label>
+<textarea id="morse-input" placeholder="Type Morse code (use spaces between letters, / for spaces between words)..."></textarea>
+<button onclick="translateToText()">Translate to Text</button>
+
+<h2>Output (Text):</h2>
+<div class="result" id="text-output"></div>
+  <hr>
+  <h2>About Morse Code</h2>
+  <p>Morse code is a method of encoding text characters as sequences of two different signal durations, called dots and dashes. It was developed in the early 1830s and has been used for long-distance communication.</p>
+  <p>Each letter and numeral is represented by a unique sequence of dots (short signals) and dashes (long signals). For example, the letter "A" is represented as ".-" and "B" as "-...".</p>
+
+  <script src="translator.js"></script>
+</body>
+</html>
